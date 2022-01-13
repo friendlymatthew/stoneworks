@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <span className="flex my-auto inline-block h-16 bg-primary justify-around">
+    <span id="navbar" className="flex sticky top-0 z-50 my-auto inline-block h-16 bg-primary justify-around">
       <Link href="/">
         <button className="my-auto text-primary-content font-semibold text-lg">
           Stoneworks Logo
