@@ -64,7 +64,7 @@ export default function Home() {
             <div className="text-center text-3xl font-semibold mb-6">
               Contact
             </div>
-            <a href="https://www.patreon.com/stoneworks" target="_blank">
+            <a href="https://www.patreon.com/stoneworks" target="_blank" rel="noreferrer">
               <button className="btn">
                 Join Patreon For Early Access To Future Videos
               </button>

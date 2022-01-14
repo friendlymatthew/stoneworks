@@ -18,6 +18,7 @@ export default function FooterSection() {
           <a
             href="https://www.patreon.com/stoneworks"
             target="_blank"
+            rel="noreferrer"
             className="link link-hover text-lg hover:scale-105 transition duration-300 ease-in text-orange-300"
           >
             Patreon
@@ -27,6 +28,7 @@ export default function FooterSection() {
           <a
             href="https://youtube.com/stoneworks"
             target="_blank"
+            rel="noreferrer"
             className="flex group"
           >
             <svg

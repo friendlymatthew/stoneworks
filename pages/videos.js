@@ -61,6 +61,7 @@ export default function Home({ data, dataTwo, dataThree }) {
                 return (
                   <Carousel
                     id={id}
+                    key={id}
                     resourceId={resourceId}
                     medium={medium}
                     title={title}
@@ -82,6 +83,7 @@ export default function Home({ data, dataTwo, dataThree }) {
                 return (
                   <Carousel
                     id={id}
+                    key={id}
                     resourceId={resourceId}
                     medium={medium}
                     title={title}
@@ -103,6 +105,7 @@ export default function Home({ data, dataTwo, dataThree }) {
                 return (
                   <Carousel
                     id={id}
+                    key={id}
                     resourceId={resourceId}
                     medium={medium}
                     title={title}

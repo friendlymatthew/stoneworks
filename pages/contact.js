@@ -12,28 +12,28 @@ export default function ContactPage() {
 
       <div className="grid grid-cols-1 place-items-center mb-32 mt-8">
         <div className="bg-base-200 grid grid-cols-2 place-items-center">
-          <a href="mailto:Jpschnitzengruber@gmail.com" target="_blank">
+          <a href="mailto:Jpschnitzengruber@gmail.com" target="_blank" rel="noreferrer">
             <button
               className="hover:bg-base-300 border-b-2 border-base-200 hover:border-accent "
               style={{ width: "360px", height: "420px" }}
             >
               <div className="flex justify-center text-lg">
                 <div>email: </div>
-                <a href="mailto:Jpschnitzengruber@gmail.com" target="_blank" className="hover:underline text-primary ml-2">
+                <a href="mailto:Jpschnitzengruber@gmail.com" target="_blank" rel="noreferrer" className="hover:underline text-primary ml-2">
                   Jpschnitzengruber@gmail.com
                 </a>
               </div>
             </button>
           </a>
 
-          <a href="" target="_blank">
+          <a href="" target="_blank" rel="noreferrer">
             <button
               className="hover:bg-base-300 border-b-2 border-base-200 hover:border-accent"
               style={{ width: "360px", height: "420px" }}
             >
               <div className="flex justify-center text-lg">
                 <div>discord: </div>
-                <a href="" target="_blank" className="hover:underline text-primary ml-2">
+                <a href="" target="_blank" rel="noreferrer" className="hover:underline text-primary ml-2">
                   StoneyStoner#3409
                 </a>
               </div>

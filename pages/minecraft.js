@@ -13,7 +13,7 @@ export default function MinecraftPage() {
           visible={true}
         />
         <div className="grid grid-cols-1 place-items-center">
-          <a className="flex mt-32 mb-12" href="https://discord.gg/stoneworks" target="_blank" >
+          <a className="flex mt-32 mb-12" href="https://discord.gg/stoneworks" target="_blank" rel="noreferrer">
             
               <div className="text-base-content text-3xl ">Minecraft Discord: </div>
             <div className="text-accent text-3xl ml-2 hover:underline">

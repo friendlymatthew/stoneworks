@@ -8,7 +8,7 @@ export default function AnnouncementBar(props) {
               {props.text}
             </div>
           ) : (
-            <a href="https://youtube.com/stoneworks" target="_blank" className="my-auto hover:text-primary-focus text-primary">
+            <a href="https://youtube.com/stoneworks" target="_blank" rel="noreferrer" className="my-auto hover:text-primary-focus text-primary">
               <button className="font-semibold italic">
                 www.youtube.com/stoneworks
               </button>

@@ -24,6 +24,7 @@ export default function PlaylistComponent({data}) {
             <a
               href={`https://www.youtube.com/watch?v=${resourceId.videoId}`}
               target="_blank"
+              rel="noreferrer"
               className="bg-neutral group hover:bg-base-100 p-2 transition duration-300 ease-in rounded-md"
             >
               <p>

@@ -34,7 +34,7 @@ export default function NavBar() {
         </button>
         </Link>
 
-        <a href="https://www.patreon.com/stoneworks" target="_blank">
+        <a href="https://www.patreon.com/stoneworks" target="_blank" rel="noreferrer">
         <button className="font-semibold shadow-inner-xl bg-white rounded-3xl px-3 py-2 text-primary hover:text-primary-focus text-md hover:bg-opacity-80  transition duration-300 ease-in">
           Patreon
         </button>
