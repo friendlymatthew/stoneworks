@@ -6,6 +6,7 @@ export default function Carousel(props) {
         <a
           href={`https://www.youtube.com/watch?v=${props.resourceId.videoId}`}
           target="_blank"
+          rel="noreferrer"
           className="group hover:bg-base-100 hover:border-primary border-2 border-base-200 p-2 transition duration-300 ease-in rounded-md"
         >
           <p>
