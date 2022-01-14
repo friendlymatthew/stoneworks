@@ -7,36 +7,46 @@ export default function ProgressView(props) {
   const [three, setThree] = useState("");
   const [four, setFour] = useState("");
   const [five, setFive] = useState("");
+  const [oneSymbol, setOneSymbol] = useState("");
+  const [twoSymbol, setTwoSymbol] = useState("");
+  const [threeSymbol, setThreeSymbol] = useState("");
+  const [fourSymbol, setFourSymbol] = useState("");
+  const [fiveSymbol, setFiveSymbol] = useState("");
 
   useEffect(() => {
     if (props.one) {
-      setOne(`step ${props.theme} font-bold hover:font-semibold text-lg`);
+      setOne(`step ${props.theme} text-md text-opacity-50`);
+      setOneSymbol("✓")
     } else {
-      setOne("step text-lg text-opacity-80");
+      setOne("step text-sm text-opacity-80");
     }
 
     if (props.two) {
-      setTwo(`step ${props.theme} font-bold hover:font-semibold text-lg`);
+      setTwo(`step ${props.theme} text-md text-opacity-50`);
+      setTwoSymbol("✓")
     } else {
-      setTwo("step text-lg text-opacity-80");
+      setTwo("step text-sm text-opacity-80");
     }
 
     if (props.three) {
-      setThree(`step ${props.theme} font-bold hover:font-semibold text-lg`);
+      setThree(`step ${props.theme} text-md text-opacity-50`);
+      setThreeSymbol("✓")
     } else {
-      setThree("step text-lg text-opacity-80");
+      setThree("step text-sm text-opacity-80");
     }
 
     if (props.four) {
-      setFour(`step ${props.theme} font-bold hover:font-semibold text-lg`);
+      setFour(`step ${props.theme} text-md text-opacity-50`);
+      setFourSymbol("✓")
     } else {
-      setFour("step text-lg text-opacity-80");
+      setFour("step text-sm text-opacity-80");
     }
 
     if (props.five) {
-      setFive(`step ${props.theme} font-bold hover:font-semibold text-lg`);
+      setFive(`step ${props.theme} text-md text-opacity-50`);
+      setFiveSymbol("✓")
     } else {
-      setFive("step text-lg text-opacity-80");
+      setFive("step text-sm text-opacity-80");
     }
   });
 
@@ -58,11 +68,11 @@ export default function ProgressView(props) {
 
       <div className="card-body">
         <ul className="top-12 w-full steps ">
-          <button className={`${one}`}>Research</button>
-          <button className={`${two}`}>Writing</button>
-          <button className={`${three}`}>Audio</button>
-          <button className={`${four}`}>Animation</button>
-          <button className={`${five}`}>Patreon</button>
+          <button data-content={`${oneSymbol}`} className={`${one}`}>Research</button>
+          <button data-content={`${twoSymbol}`} className={`${two}`}>Writing</button>
+          <button data-content={`${threeSymbol}`} className={`${three}`}>Audio</button>
+          <button data-content={`${fourSymbol}`} className={`${four}`}>Animation</button>
+          <button data-content={`${fiveSymbol}`} className={`${five}`}>Patreon</button>
         </ul>
       </div>
     </div>

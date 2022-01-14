@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import AnnouncementBar from "../components/Announcement";
 
 export default function MinecraftPage() {
   return (
@@ -8,6 +9,9 @@ export default function MinecraftPage() {
         <NavBar />
       </header>
       <main className="relative">
+        <AnnouncementBar 
+          visible={true}
+        />
         <div className="grid grid-cols-1 place-items-center">
           <a className="flex mt-32 mb-12" href="https://discord.gg/stoneworks" target="_blank" >
             
