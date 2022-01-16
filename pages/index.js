@@ -35,7 +35,7 @@ export default function Home() {
                     playing
                   />
 
-                  <div className="bg-primary lg:rounded-bl-lg pb-2">
+                  <div className="bg-gradient-to-r from-primary to-primary-focus lg:rounded-bl-lg pb-2">
                     <span className="px-6 mt-6 mb-6 inline-block align-text-bottom">
                       <div className="font-bold text-3xl align-text-bottom">
                         Channel Content

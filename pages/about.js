@@ -16,10 +16,10 @@ export default function AboutPage() {
           visible={true}
         />
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3 p-12">
           <div
             id="aboutStoneworks"
-            className="bg-base-300 p-4 border border-white rounded-lg"
+            className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border"
           >
             <div className="grid grid-cols-1">
               <div className="text-center text-3xl font-semibold mt-8">
@@ -46,8 +46,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div id="aboutJack" className="bg-base-300 p-4">
-            <div className="grid grid-cols-1">
+          <div id="aboutJack" className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border">
+            <div className="grid grid-cols-1 ">
               <div className="text-center text-3xl font-semibold mt-8">
                 About Jack Stoneworks
               </div>
