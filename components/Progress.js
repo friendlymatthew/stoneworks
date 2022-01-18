@@ -15,35 +15,35 @@ export default function ProgressView(props) {
 
   useEffect(() => {
     if (props.one) {
-      setOne(`step ${props.theme} text-md text-opacity-50`);
+      setOne(`step ${props.theme} text-sm md:text-md text-opacity-50`);
       setOneSymbol("✓")
     } else {
       setOne("step text-sm text-opacity-80");
     }
 
     if (props.two) {
-      setTwo(`step ${props.theme} text-md text-opacity-50`);
+      setTwo(`step ${props.theme} text-sm md:text-md text-opacity-50`);
       setTwoSymbol("✓")
     } else {
       setTwo("step text-sm text-opacity-80");
     }
 
     if (props.three) {
-      setThree(`step ${props.theme} text-md text-opacity-50`);
+      setThree(`step ${props.theme} text-sm md:text-md text-opacity-50`);
       setThreeSymbol("✓")
     } else {
       setThree("step text-sm text-opacity-80");
     }
 
     if (props.four) {
-      setFour(`step ${props.theme} text-md text-opacity-50`);
+      setFour(`step ${props.theme} text-sm md:text-md text-opacity-50`);
       setFourSymbol("✓")
     } else {
       setFour("step text-sm text-opacity-80");
     }
 
     if (props.five) {
-      setFive(`step ${props.theme} text-md text-opacity-50`);
+      setFive(`step ${props.theme} text-sm md:text-md text-opacity-50`);
       setFiveSymbol("✓")
     } else {
       setFive("step text-sm text-opacity-80");
@@ -51,7 +51,7 @@ export default function ProgressView(props) {
   });
 
   return (
-    <div className="p-3 mb-12 bg-base-200 hover:bg-base-100 rounded-lg transition ease-in duration-300">
+    <div className="p-3 mb-12 hover:bg-base-200 bg-base-100 rounded-lg transition ease-in duration-300">
       <div className="flex">
         <div className="my-auto text-xl text-base-content font-semibold">
           {props.title}
@@ -59,7 +59,7 @@ export default function ProgressView(props) {
 
         {props.visible ? (
           <Link href={`/videos#${props.tag}`}>
-          <button className=" ml-4 my-auto text-md badge badge-secondary text-base-content">
+          <button className=" ml-4 my-auto text-sm bg-indigo-400 px-2 py-1 rounded-3xl text-base-content md:hover:text-black md:transition md:ease-in md:duration-300">
             {props.tag}
           </button>
           </Link>

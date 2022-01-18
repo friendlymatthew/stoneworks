@@ -11,12 +11,10 @@ export default function AboutPage() {
         <NavBar />
       </header>
 
-      <main className="relative h-screen">
-        <AnnouncementBar 
-          visible={true}
-        />
+      <main className="relative">
+        <AnnouncementBar visible={true} />
 
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3 p-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-12">
           <div
             id="aboutStoneworks"
             className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border"
@@ -32,21 +30,21 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="text-center mt-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt
-              lobortis. Hendrerit dolor magna eget est lorem. Risus quis varius
-              quam quisque. Sed vulputate odio ut enim blandit. Vivamus arcu
-              felis bibendum ut tristique et. Non diam phasellus vestibulum
-              lorem sed. In eu mi bibendum neque egestas congue quisque egestas.
-              Magna fermentum iaculis eu non diam phasellus vestibulum. Leo in
-              vitae turpis massa sed elementum tempus. Eget arcu dictum varius
-              duis at consectetur lorem. Morbi blandit cursus risus at ultrices.
+            <div className="text-start mt-8">
+              Stoneworks is a youtube channel and Minecraft server which seeks
+              to educate, entertain, and create healthy communities. The youtube
+              channel focuses on scientific, historical, and cultural education
+              for the purposes of World Building- where people make up their own
+              constructed worlds for fun or to inform their writing, role
+              playing games, or video game design. The youtube also features the
+              world building works and analysis of its creator, Jack.
             </div>
           </div>
 
-          <div id="aboutJack" className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border">
+          <div
+            id="aboutJack"
+            className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border"
+          >
             <div className="grid grid-cols-1 ">
               <div className="text-center text-3xl font-semibold mt-8">
                 About Jack Stoneworks
@@ -59,16 +57,18 @@ export default function AboutPage() {
             </div>
 
             <div className="text-center mt-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt
-              lobortis. Hendrerit dolor magna eget est lorem. Risus quis varius
-              quam quisque. Sed vulputate odio ut enim blandit. Vivamus arcu
-              felis bibendum ut tristique et. Non diam phasellus vestibulum
-              lorem sed. In eu mi bibendum neque egestas congue quisque egestas.
-              Magna fermentum iaculis eu non diam phasellus vestibulum. Leo in
-              vitae turpis massa sed elementum tempus. Eget arcu dictum varius
-              duis at consectetur lorem. Morbi blandit cursus risus at ultrices.
+              Jack Stoneworks, as he is known, is the creator of Stoneworks. He
+              has been world building to some degree for over 15 years, and is
+              driven to help others in their world building endeavors out of the
+              lack of content to inform necessary components of the hobby. Jack
+              has always been curious about many things in our own world, and
+              his world building is first and foremost a reflection of that.
+              Jack got his start on youtube after receiving a 20$ microphone for
+              Christmas, and realizing that there was no youtube tutorial to
+              help him in his mapmaking for his own world building projects.
+              Since then, Jack has grown his channel by making edutainment
+              videos, and has since started a bustling minecraft server with his
+              creative audience.
             </div>
           </div>
         </div>

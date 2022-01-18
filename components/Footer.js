@@ -50,7 +50,7 @@ export default function FooterSection() {
         </div>
       </footer>
       <a href="https://github.com/matthewkim0/stoneworks" target="_blank" rel="noreferrer">
-      <span className="group bg-warning w-screen h-12 border-b-xl flex">
+      <span className="group bg-gradient-to-r to-orange-400 from-rose-400 w-screen h-12 border-b-xl flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 text-neutral my-auto ml-6"
@@ -66,8 +66,8 @@ export default function FooterSection() {
             d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132   A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
           />
         </svg>
-        <div className="ml-3 text-md text-neutral my-auto text-opacity-0 group-hover:text-opacity-100 transition duration-300 ease-in">
-            developed by matthewkim0
+        <div className="ml-3 text-md text-neutral my-auto font-extrabold text-opacity-0 group-hover:text-opacity-100 transition duration-300 ease-in">
+            developed by matthewkim0, written in Next.js
         </div>
       </span>
       </a>
