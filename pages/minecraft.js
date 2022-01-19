@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import AnnouncementBar from "../components/Announcement";
+import Image from "next/image";
 
 export default function MinecraftPage() {
   return (
@@ -12,7 +13,9 @@ export default function MinecraftPage() {
         <AnnouncementBar visible={true} />
 
         <div className="grid grid-cols-1 place-items-center">
-          <div className="text-start text-md w-10/12">
+          <Image src="/minecraft.png" width={400} height={300} />
+
+          <div className="text-start text-xl w-7/12">
             The Stoneworks Minecraft server host a couple of online worlds where
             players can come together, create communities, towns, nations,
             religions, and cultures, all in the vein of creative world building.
@@ -29,26 +32,32 @@ export default function MinecraftPage() {
             to engage in it.
           </div>
 
-          
-
-          <div className="text-base-content text-3xl mt-24 mb-2">
-            Minecraft IP: Play.Stoneworks.GG
-          </div>
-
-          <a
-            className="flex"
-            href="https://discord.gg/stoneworks"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="text-base-content text-3xl ">
-              Minecraft Discord:{" "}
+          <section>
+            <div className="text-center text-4xl font-semibold p-4">
+              Join the Stoneworks Minecraft Server
             </div>
-            <div className="text-accent text-3xl ml-2 hover:underline">
-              discord.gg/stoneworks
+            <div className="text-center text-2xl p-4">
+              Towns, Nations, Culture, Religion, Wars, History. The time is now,
+              your creation awaits.
             </div>
-          </a>
+            <div className="text-base-content text-3xl mt-24 mb-2">
+              Minecraft IP: Play.Stoneworks.GG
+            </div>
 
+            <a
+              className="flex"
+              href="https://discord.gg/stoneworks"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="text-base-content text-3xl ">
+                Minecraft Discord:{" "}
+              </div>
+              <div className="text-accent text-3xl ml-2 hover:underline">
+                discord.gg/stoneworks
+              </div>
+            </a>
+          </section>
         </div>
       </main>
       <footer className="mt-64">

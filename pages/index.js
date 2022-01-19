@@ -46,12 +46,15 @@ export default function Home() {
           id="hero"
           className="p-6 w-full grid grid-cols-1 place-items-center "
         >
+          <div className="grid grid-cols-1 place-items-center w-11/12">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=x5UIq_nGpQA"
             height={420}
             width={720}
             style={{}}
           />
+          </div>
+          
           <div className="text-xl md:text-4xl text-white text-center lg:text-start font-semibold pt-12 pb-2">
             Channel Description
           </div>

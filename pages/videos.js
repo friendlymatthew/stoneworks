@@ -5,7 +5,7 @@ import AnnouncementBar from "../components/Announcement";
 import FooterSection from "../components/Footer";
 
 const YOUTUBE_PLAYLIST_ITEMS_API =
-  "http://www.googleapis.com/youtube/v3/playlistItems";
+  "https://www.googleapis.com/youtube/v3/playlistItems";
 
 export async function getServerSideProps() {
   const res = await fetch(

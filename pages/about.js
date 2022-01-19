@@ -11,13 +11,13 @@ export default function AboutPage() {
         <NavBar />
       </header>
 
-      <main className="relative">
+      <main className="relative h-screen">
         <AnnouncementBar visible={true} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-12 h-5/12">
+        <div className="grid grid-cols-1 place-items-center md:grid-cols-2 gap-3 p-12 h-5/12">
           <div
             id="aboutStoneworks"
-            className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border"
+            className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border w-8/12"
           >
             <div className="grid grid-cols-1">
               <div className="text-center text-3xl font-semibold mt-8">
@@ -43,7 +43,7 @@ export default function AboutPage() {
 
           <div
             id="aboutJack"
-            className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border"
+            className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border w-8/12"
           >
             <div className="grid grid-cols-1 ">
               <div className="text-center text-3xl font-semibold mt-8">
