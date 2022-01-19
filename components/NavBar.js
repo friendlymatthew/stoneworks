@@ -51,10 +51,10 @@ export default function NavBar() {
           href="https://www.patreon.com/stoneworks"
           target="_blank"
           refs="noreferrer"
-          className="py-1 px-2 bg-white rounded-xl hover:bg-opacity-80"
+          className=""
         >
-          <a>
-            <div className="text-orange-400 hover:underline font-medium text-md">Patreon</div>
+          <a className="bg-orange-500 px-2 py-1 rounded-2xl group hover:bg-orange-600 md:transition md:ease-in md:duration-300">
+            <div className="text-white text-opacity-100 md:group-hover:text-gray-700 md:group-hover:text-opacity-80 bg-orange-700hover:underline font-medium text-md md:transition md:ease-in md:duration-300">Patreon</div>
         </a>
         </Link>
       </div>

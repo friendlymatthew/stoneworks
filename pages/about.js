@@ -14,7 +14,7 @@ export default function AboutPage() {
       <main className="relative">
         <AnnouncementBar visible={true} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-12 h-5/12">
           <div
             id="aboutStoneworks"
             className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border"

@@ -19,13 +19,13 @@ const channelCategories = [
   },
   {
     key: "Minecraft",
-    id:"#minecraft",
+    id: "#minecraft",
     url: "https://www.youtube.com/watch?v=4Zku2h_XHjo",
     desc: "Storytelling and tutorials surrounding the Stoneworks Minecraft Server, which demonstrates the creativity and complexity that our online community has succeeded in developing.",
   },
   {
     key: "Personal Projects",
-    id:"#worldbuilding",
+    id: "#worldbuilding",
     url: "https://www.youtube.com/watch?v=idZmLKInbsg",
     desc: "Jack Stoneworks’s personal world building projects, simply for the sake of having fun and demonstrating one example of how world building can be carried out and achieved.",
   },
@@ -132,14 +132,16 @@ export default function Home() {
             Towns, Nations, Culture, Religion, Wars, History. The time is now,
             your creation awaits.
           </div>
-          <a
+          <Link
             href="/minecraft"
             className="grid grid-cols-1 place-items-center pt-2 mb-32"
           >
-            <div className="text-orange-400 hover:underline rounded-3xl px-2 py-1">
-              Learn more
-            </div>
-          </a>
+            <a>
+              <div className="text-orange-400 hover:underline rounded-3xl px-2 py-1">
+                Learn more
+              </div>
+            </a>
+          </Link>
         </section>
       </main>
       <section id="footer">
