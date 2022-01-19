@@ -52,7 +52,7 @@ export default function Home({ data, dataTwo, dataThree }) {
 
         <section
           id="minecraft"
-          className="mt-8 border-b-2 border-gray-400 pb-8"
+          className=" border-b-2 border-gray-400 bg-base-100 md:hover:bg-gray-600 pt-8 md:transition md:ease-in md:duration-300 pb-8"
         >
           <div className="pl-8 text-3xl text-white font-extrabold mb-2">
             Minecraft
@@ -76,8 +76,9 @@ export default function Home({ data, dataTwo, dataThree }) {
         </section>
         <section
           id="worldbuilding"
-          className="mt-8 border-b-2 border-gray-400 pb-8"
+          className="border-b-2 border-gray-400 bg-base-100 md:hover:bg-gray-600 pt-8 md:transition md:ease-in md:duration-300 pb-8"
         >
+          
           <div className="pl-8 text-3xl text-white font-extrabold mb-2">
             World Building
           </div>
@@ -99,7 +100,7 @@ export default function Home({ data, dataTwo, dataThree }) {
           </div>
         </section>
 
-        <section id="education" className="mt-8 pb-8">
+        <section id="education" className="border-b-2 border-gray-400 bg-base-100 md:hover:bg-gray-600 pt-8 md:transition md:ease-in md:duration-300 pb-8">
           <div className="pl-8 text-3xl text-white font-extrabold mb-2">
             Education
           </div>
