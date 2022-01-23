@@ -41,21 +41,25 @@ export default function Home() {
 
         <AnnouncementBar visible={true} />
       </header>
-      <main className="relative">
+      <main className="relative" style={{ fontFamily: "Cabin" }}>
         <section
           id="hero"
           className="p-6 w-full grid grid-cols-1 place-items-center "
         >
-          <div className="grid grid-cols-1 place-items-center w-11/12">
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=x5UIq_nGpQA"
-            height={420}
-            width={720}
-            style={{}}
-          />
+          <div className="grid grid-cols-1 place-items-center w-11/12 py-8">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=Jmk7hOvDFB0"
+              height={420}
+              width={720}
+              style={{}}
+              playing
+            />
           </div>
-          
-          <div className="text-xl md:text-4xl text-white text-center lg:text-start font-semibold pt-12 pb-2">
+
+          <div
+            style={{ fontFamily: "Roboto" }}
+            className="text-xl md:text-5xl text-white text-center lg:text-start font-semibold pt-12 mb-2 pb-2"
+          >
             Channel Description
           </div>
           <div className="flex flex-wrap justify-center gap-2 w-10/12">
@@ -74,28 +78,33 @@ export default function Home() {
                     }}
                   />
 
-                  <div className="text-2xl text-base-content font-bold mt-2">
-                    {channel.key}
-                  </div>
+                  <section className="px-2">
+                    <div
+                      style={{ fontFamily: "Roboto" }}
+                      className="text-2xl text-base-content font-bold mt-2"
+                    >
+                      {channel.key}
+                    </div>
 
-                  <div className="text-sm text-base-content text-opacity-80">
-                    {channel.desc}
-                  </div>
-                  <Link href={`/videos/${channel.id}`}>
-                    <a>
-                      <div className="text-orange-400 font-medium hover:underline">
-                        See More
-                      </div>
-                    </a>
-                  </Link>
+                    <div className="text-sm text-base-content text-opacity-80">
+                      {channel.desc}
+                    </div>
+                    <Link href={`/videos/${channel.id}`}>
+                      <a>
+                        <div className="text-orange-500 mt-1 font-medium md:hover:text-orange-400 md:ease-in md:transition md:duration-100 md:hover:underline">
+                          See More
+                        </div>
+                      </a>
+                    </Link>
+                  </section>
                 </section>
               );
             })}
           </div>
         </section>
 
-        <section id="progress" className="p-2">
-          <div className="text-4xl text-white text-center lg:text-start font-semibold py-4">
+        <section id="progress" className="px-2 py-32 bg-gray-600">
+          <div className="text-4xl mb-6 text-white text-center lg:text-start font-semibold py-4">
             Upcoming Videos
           </div>
           <div className="flex flex-wrap justify-center space-x-2">
@@ -120,9 +129,10 @@ export default function Home() {
             />
           </div>
         </section>
+
         <section
           id="minecraft"
-          className="bg- border-t-green-600 grid grid-cols-1 place-items-center"
+          className="py-32 grid grid-cols-1 place-items-center"
         >
           <div className="grid grid-cols-1 place-items-center">
             <Image src="/minecraft.png" width={400} height={300} />
@@ -140,7 +150,7 @@ export default function Home() {
             className="grid grid-cols-1 place-items-center pt-2 mb-32"
           >
             <a>
-              <div className="text-orange-400 hover:underline rounded-3xl px-2 py-1">
+              <div className="text-orange-500 md:hover:text-orange-400 md:ease-in md:duration-200 md:transition hover:underline rounded-3xl px-2 py-1">
                 Learn more
               </div>
             </a>

@@ -41,7 +41,7 @@ export default function Home({ data, dataTwo, dataThree }) {
         <AnnouncementBar visible={true} />
       </div>
 
-      <main className="py-2 relative">
+      <main className="py-2 relative" style={{ fontFamily: "Cabin"}}>
         <div className="grid grid-cols-1 place-items-center">
           <section className="flex flex-wrap text-md md:text-xl font-medium md:font-semibold py-2 text-white justify-around space-x-3 bg-primary rounded-xl w-11/12">
             <a href="#minecraft">Minecraft</a>

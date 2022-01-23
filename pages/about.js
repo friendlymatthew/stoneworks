@@ -4,73 +4,56 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import AnnouncementBar from "../components/Announcement";
 
+const aboutdb = [
+  {
+    key: 1,
+    title: "Stoneworks",
+    action: "Watch Videos",
+    actionPath: "/videos",
+    desc: "Stoneworks is a youtube channel and Minecraft server which seeks to educate, entertain, and create healthy communities. The youtube channel focuses on scientific, historical, and cultural education for the purposes of World Building- where people make up their own constructed worlds for fun or to inform their writing, role playing games, or video game design. The youtube also features the world building works and analysis of its creator, Jack.",
+  },
+  {
+    key: 2,
+    title: "Jack Stoneworks",
+    action: "Get in touch",
+    actionPath: "/contact",
+    desc: "Jack Stoneworks, as he is known, is the creator of Stoneworks. He has been world building to some degree for over 15 years, and is driven to help others in their world building endeavors out of the lack of content to inform necessary components of the hobby. Jack has always been curious about many things in our own world, and his world building is first and foremost a reflection of that. Jack got his start on youtube after receiving a $20 microphone for Christmas, and realizing that there was no youtube tutorial to help him in his mapmaking for his own world building projects. Since then, Jack has grown his channel by making edutainment videos, and has since started a bustling minecraft server with his creative audience.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <div>
+      <NavBar />
       <header className="sticky z-50 top-0">
-        <NavBar />
+        <AnnouncementBar visible={true} />
       </header>
 
-      <main className="relative h-screen">
-        <AnnouncementBar visible={true} />
+      <main className="relative" style={{ fontFamily: "Cabin" }}>
+        <div className="grid grid-cols-1 place-items-center">
+          {aboutdb.map((about) => {
+            return (
+              <section
+                key={about.key}
+                id={about.tite}
+                className="mb-16 px-4 py-3  w-8/12 "
+              >
+                <div
+                  className="text-5xl  w-8/12 text-white"
+                  style={{ fontFamily: "Roboto" }}
+                >
+                  {about.title}
+                </div>
+                <div className="mb-2 mt-2 text-white text-opacity-80 text-lg">{about.desc}</div>
 
-        <div className="grid grid-cols-1 place-items-center md:grid-cols-2 gap-3 p-12 h-5/12">
-          <div
-            id="aboutStoneworks"
-            className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border w-8/12"
-          >
-            <div className="grid grid-cols-1">
-              <div className="text-center text-3xl font-semibold mt-8">
-                About Stoneworks
-              </div>
-              <div className="flex justify-around">
-                <button className="hover:underline hover:text-accent-focus text-md text-accent">
-                  Watch Videos
-                </button>
-              </div>
-            </div>
-
-            <div className="text-start mt-8">
-              Stoneworks is a youtube channel and Minecraft server which seeks
-              to educate, entertain, and create healthy communities. The youtube
-              channel focuses on scientific, historical, and cultural education
-              for the purposes of World Building- where people make up their own
-              constructed worlds for fun or to inform their writing, role
-              playing games, or video game design. The youtube also features the
-              world building works and analysis of its creator, Jack.
-            </div>
-          </div>
-
-          <div
-            id="aboutJack"
-            className="bg-base-300 p-4 rounded-lg hover:border-white border-base-300 transition ease-in duration-300 border w-8/12"
-          >
-            <div className="grid grid-cols-1 ">
-              <div className="text-center text-3xl font-semibold mt-8">
-                About Jack Stoneworks
-              </div>
-              <div className="flex justify-around">
-                <button className="hover:underline hover:text-accent-focus text-md text-accent">
-                  Get in touch
-                </button>
-              </div>
-            </div>
-
-            <div className="text-center mt-8">
-              Jack Stoneworks, as he is known, is the creator of Stoneworks. He
-              has been world building to some degree for over 15 years, and is
-              driven to help others in their world building endeavors out of the
-              lack of content to inform necessary components of the hobby. Jack
-              has always been curious about many things in our own world, and
-              his world building is first and foremost a reflection of that.
-              Jack got his start on youtube after receiving a 20$ microphone for
-              Christmas, and realizing that there was no youtube tutorial to
-              help him in his mapmaking for his own world building projects.
-              Since then, Jack has grown his channel by making edutainment
-              videos, and has since started a bustling minecraft server with his
-              creative audience.
-            </div>
-          </div>
+                <Link href={about.actionPath}>
+                  <a className="text-orange-600 text-lg md:hover:text-orange-400 md:ease-in md:transition md:duration-100 md:hover:underline ">
+                    {about.action}
+                  </a>
+                </Link>
+              </section>
+            );
+          })}
         </div>
       </main>
 

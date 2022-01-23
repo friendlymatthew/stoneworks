@@ -51,7 +51,7 @@ export default function ProgressView(props) {
   });
 
   return (
-    <div className="p-3 mb-12 hover:bg-base-200 bg-base-100 rounded-lg transition ease-in duration-300">
+    <div className="p-3 mb-12 hover:bg-base-100 border-2 border-base-100 bg-gray-600 rounded-lg transition ease-in duration-300">
       <div className="flex">
         <div className="my-auto text-xl text-base-content font-semibold">
           {props.title}

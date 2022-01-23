@@ -4,43 +4,36 @@ import Footer from "../components/Footer";
 
 export default function ContactPage() {
   return (
-    <div className="grid grid-cols-1">
-      <NavBar />
-      <AnnouncementBar visible={true} />
+    <div className="grid grid-cols-1" style={{ fontFamily: "cabin" }}>
+      <header>
+        <NavBar />
+        <AnnouncementBar visible={true} />
+      </header>
 
-      <div className="text-center text-3xl font-semibold mt-12">Contact</div>
+      <main className="grid grid-cols-1 place-items-center gap-6">
+        <div className="text-center text-3xl font-semibold mt-12">Contact</div>
 
-      <div className="grid grid-cols-1 place-items-center mb-32 mt-8">
-        <div className="bg-base-200 grid grid-cols-2 place-items-center">
-          <a href="mailto:Jpschnitzengruber@gmail.com" target="_blank" rel="noreferrer">
-            <button
-              className="hover:bg-base-300 border-b-2 border-base-200 hover:border-accent "
-              style={{ width: "360px", height: "420px" }}
-            >
-              <div className="flex justify-center text-lg">
-                <div>email: </div>
-                <a href="mailto:Jpschnitzengruber@gmail.com" target="_blank" rel="noreferrer" className="hover:underline text-primary ml-2">
-                  Jpschnitzengruber@gmail.com
-                </a>
-              </div>
-            </button>
+        <section>
+          <a
+            href="mailto:Jpschnitzengruber@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="text-center text-3xl text-blue-600 md:hover:underline md:hover:text-blue-400 md:ease-in md:duration-100 md:transition">
+              Jpschnitzengruber@gmail.com
+            </div>
           </a>
+        </section>
 
-          <a href="" target="_blank" rel="noreferrer">
-            <button
-              className="hover:bg-base-300 border-b-2 border-base-200 hover:border-accent"
-              style={{ width: "360px", height: "420px" }}
-            >
-              <div className="flex justify-center text-lg">
-                <div>discord: </div>
-                <a href="" target="_blank" rel="noreferrer" className="hover:underline text-primary ml-2">
-                  StoneyStoner#3409
-                </a>
-              </div>
-            </button>
-          </a>
-        </div>
-      </div>
+        <section className="mt-4 h-72">
+          <div className="flex text-3xl space-x-2">
+            <div className="">discord:</div>
+            <div className="">
+              StoneyStoner#3409
+            </div>
+          </div>
+        </section>
+      </main>
 
       <Footer />
     </div>
