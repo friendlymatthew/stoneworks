@@ -30,7 +30,7 @@ export default function AboutPage() {
       </header>
 
       <main className="relative" style={{ fontFamily: "Cabin" }}>
-        <div className="grid grid-cols-1 place-items-center">
+        <div className="grid grid-cols-1 place-items-center mt-12">
           {aboutdb.map((about) => {
             return (
               <section
