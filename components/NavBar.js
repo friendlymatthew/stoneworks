@@ -14,7 +14,7 @@ export default function NavBar() {
             <Image src="/StoneworksLogo.png" width={60} height={60} />
             <div
               style={{ fontFamily: "Roboto" }}
-              className="ml-2 md:ml-4 text-sm w-96 italic md:text-lg lg:text-2xl  text-primary-content hover:text-opacity-80"
+              className="ml-2 md:ml-4 text-lg italic lg:text-2xl  text-primary-content hover:text-opacity-80"
             >
               Stoneworks World Building
             </div>
@@ -22,31 +22,31 @@ export default function NavBar() {
         </a>
       </Link>
 
-      <div className="grid grid-cols-6 gap-1 w-10/12 xl:w-9/12  place-items-center">
+      <div className="flex xl:w-9/12 space-x-1 lg:space-x-2 place-items-center">
         <Link href="/about" className="">
           <a>
-            <div className="  py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-md">
+            <div className="  py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-sm lg:text-lg">
               About
             </div>
           </a>
         </Link>
         <Link href="/videos" className="">
           <a>
-            <div className="  py-1 px-2  text-primary-content font-bold hover:underline hover:text-opacity-80 text-md">
+            <div className="  py-1 px-2  text-primary-content font-bold hover:underline hover:text-opacity-80 text-sm lg:text-lg">
               Videos
             </div>
           </a>
         </Link>
         <Link href="/minecraft" className="">
           <a>
-            <div className=" py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-md">
+            <div className=" py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-sm lg:text-lg">
               Minecraft
             </div>
           </a>
         </Link>
         <Link href="/contact" className="">
           <a>
-            <div className="py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-md">
+            <div className="py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-sm lg:text-lg">
               Contact
             </div>
           </a>
@@ -56,7 +56,7 @@ export default function NavBar() {
           target="_blank"
           rel="noreferrer"
         >
-          <div className="py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-md">
+          <div className="py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-sm lg:text-lg">
             Merch
           </div>
         </a>
@@ -66,7 +66,7 @@ export default function NavBar() {
             rel="noreferrer"
             className="bg-orange-500 px-2 py-1 rounded-2xl group hover:bg-orange-400 md:transition md:ease-in md:duration-300"
           >
-            <div className="text-white text-opacity-100 md:group-hover:text-gray-700 md:group-hover:text-opacity-80 hover:underline font-bold text-md md:transition md:ease-in md:duration-300">
+            <div className="text-white text-opacity-100 md:group-hover:text-gray-700 md:group-hover:text-opacity-80 hover:underline font-bold text-sm lg:text-lg md:transition md:ease-in md:duration-300">
               Patreon
             </div>
           </a>

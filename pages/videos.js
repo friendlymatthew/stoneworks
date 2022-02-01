@@ -1,4 +1,3 @@
-import { Grid } from "@material-ui/core";
 import NavBar from "../components/NavBar";
 import Carousel from "../components/Carousel";
 import AnnouncementBar from "../components/Announcement";
@@ -42,7 +41,7 @@ export default function Home({ data, dataTwo, dataThree }) {
       </div>
 
       <main className="py-2 relative" style={{ fontFamily: "Cabin"}}>
-        <div className="grid grid-cols-1 place-items-center">
+        <div className="grid grid-cols-1 place-items-center my-12">
           <section className="flex flex-wrap text-md md:text-xl font-medium md:font-semibold py-2 text-white justify-around space-x-3 bg-primary rounded-xl w-11/12">
             <a href="#minecraft">Minecraft</a>
             <a href="#worldbuilding">World Building</a>
