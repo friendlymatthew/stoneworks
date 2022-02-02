@@ -30,13 +30,7 @@ export default function NavBar() {
             </div>
           </a>
         </Link>
-        <Link href="/videos" className="">
-          <a>
-            <div className="  py-1 px-2  text-primary-content font-bold hover:underline hover:text-opacity-80 text-sm lg:text-lg">
-              Videos
-            </div>
-          </a>
-        </Link>
+       
         <Link href="/minecraft" className="">
           <a>
             <div className=" py-1 px-2 text-primary-content font-bold hover:underline hover:text-opacity-80 text-sm lg:text-lg">

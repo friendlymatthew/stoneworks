@@ -65,6 +65,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-2 w-10/12">
             {channelCategories.map((channel) => {
               return (
+                <Link href={`/videos/${channel.id}`}>
                 <section
                   key={`${channel.key}`}
                   className="p-2 mb-4 bg-base-100 items-start md:hover:bg-base-200 rounded-xl md:transition md:ease-in md:duration-300"
@@ -89,15 +90,14 @@ export default function Home() {
                     <div className="text-sm text-base-content text-opacity-80">
                       {channel.desc}
                     </div>
-                    <Link href={`/videos/${channel.id}`}>
                       <a>
                         <div className="text-orange-500 mt-1 font-medium md:hover:text-orange-400 md:ease-in md:transition md:duration-100 md:hover:underline">
                           See More
                         </div>
                       </a>
-                    </Link>
                   </section>
                 </section>
+                </Link>
               );
             })}
           </div>
